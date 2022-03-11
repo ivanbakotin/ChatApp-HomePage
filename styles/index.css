@@ -7,6 +7,12 @@
   font-size: 62.5%;
 }
 
+@media (max-width: 668px) {
+  *, *::after, *::before {
+    font-size: 48%;
+  }
+}
+
 body {
   min-height: 100vh;
   display: -webkit-box;
@@ -22,7 +28,7 @@ body {
   z-index: -1;
   -webkit-transform: translateX(-30%);
           transform: translateX(-30%);
-  width: clamp(20rem, 40vw, 100rem);
+  width: clamp(40rem, 40vw, 100rem);
   height: clamp(10rem, 90vh, 90rem);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -49,17 +55,19 @@ body {
 }
 
 .container .phone {
+  margin: 2rem;
   height: 55rem;
   width: 30rem;
   border-radius: 3rem;
-  padding: 2rem;
-  background-color: black;
+  padding: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 30px gray;
+          box-shadow: 1px 1px 30px gray;
 }
 
 .container .phone .header {
   background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
   background-image: linear-gradient(to right, #8838ff, #e942ff);
-  width: 100%;
   border-top-right-radius: 3rem;
   border-top-left-radius: 3rem;
   height: 7rem;
@@ -160,6 +168,46 @@ body {
   color: white;
   font-size: clamp(1rem, 1vw, 3rem);
   content: "\205D";
+}
+
+.container .phone .messages {
+  height: 35rem;
+  background-color: #f5f3f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: -2rem;
+}
+
+.container .phone .messages .message {
+  margin: 1rem;
+  padding: 1rem;
+  width: 60%;
+  font-size: clamp(0.5rem, 0.5vw, 1rem);
+  border-radius: 2rem;
+}
+
+.container .phone .messages .left {
+  background-color: #e8d6fa;
+  color: #9241c8;
+}
+
+.container .phone .messages .right {
+  background-color: white;
+  color: #6e5d7e;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.container .phone .input {
+  height: 9rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background-color: #f5f3f7;
 }
 
 .container .description {
