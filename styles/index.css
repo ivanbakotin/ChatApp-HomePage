@@ -1,0 +1,184 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+  width: clamp(20rem, 40vw, 100rem);
+  height: clamp(10rem, 90vh, 90rem);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to right top, #8838ff, #e942ff);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .phone {
+  height: 55rem;
+  width: 30rem;
+  border-radius: 3rem;
+  padding: 2rem;
+  background-color: black;
+}
+
+.container .phone .header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to right, #8838ff, #e942ff);
+  width: 100%;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .phone .header .top {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: white;
+  width: 50%;
+  height: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.container .phone .header .bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .phone .header .bot .left {
+  margin-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .phone .header .bot .left .arrow-left::after {
+  color: white;
+  content: "\02C2";
+  font-size: clamp(1rem, 1vw, 3rem);
+}
+
+.container .phone .header .bot .left .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.container .phone .header .bot .left .contact .img img {
+  border: 0.15rem white solid;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.container .phone .header .bot .left .contact .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.2rem;
+}
+
+.container .phone .header .bot .left .contact .contact-info .name {
+  font-weight: 700;
+  color: white;
+  font-size: clamp(0.9rem, 0.8vw, 3rem);
+}
+
+.container .phone .header .bot .left .contact .contact-info .status {
+  opacity: 0.7;
+  color: white;
+  font-size: clamp(0.7rem, 0.5vw, 3rem);
+}
+
+.container .phone .header .bot .right .dots::after {
+  margin-right: 1rem;
+  color: white;
+  font-size: clamp(1rem, 1vw, 3rem);
+  content: "\205D";
+}
+
+.container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  width: 30%;
+}
+
+.container .description h1 {
+  font-size: clamp(2rem, 2vw, 4rem);
+}
+
+.container .description p {
+  font-size: clamp(1rem, 1vw, 3rem);
+}
+/*# sourceMappingURL=index.css.map */
