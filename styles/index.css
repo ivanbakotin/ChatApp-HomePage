@@ -171,7 +171,7 @@ body {
 }
 
 .container .phone .messages {
-  height: 35rem;
+  height: 37rem;
   background-color: #f5f3f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,15 +180,37 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: -2rem;
+}
+
+.container .phone .messages .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .phone .messages .images img {
+  margin: 0.5rem;
+  border-radius: 1rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 4.5rem;
+  width: 4.5rem;
 }
 
 .container .phone .messages .message {
-  margin: 1rem;
-  padding: 1rem;
-  width: 60%;
-  font-size: clamp(0.5rem, 0.5vw, 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  width: 55%;
+  font-size: clamp(0.5rem, 0.4vw, 1rem);
   border-radius: 2rem;
+  line-height: 1.5;
+  font-weight: 700;
 }
 
 .container .phone .messages .left {
@@ -203,7 +225,62 @@ body {
       align-self: flex-end;
 }
 
+.container .phone .messages .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 0.5rem;
+  padding: 1rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to left, #8838ff, #e942ff);
+  border-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: 0.5rem;
+}
+
+.container .phone .messages .option .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.container .phone .messages .option .left-side .circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: solid 1px white;
+}
+
+.container .phone .messages .option .left-side .text {
+  font-size: clamp(0.5rem, 0.5vw, 1.5rem);
+  color: white;
+}
+
+.container .phone .messages .option .right-side {
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
+  margin-right: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
 .container .phone .input {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 9rem;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;

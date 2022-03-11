@@ -126,33 +126,88 @@ body {
     }
 
     .messages {
-      height: 35rem;
+      height: 37rem;
       background-color: hsl(270, 20%, 96%);
       display: flex;
       flex-direction: column;
-      gap: -2rem;
+
+      .images {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          margin: 0.5rem;
+          border-radius: 1rem;
+          align-self: flex-end;
+          height: 4.5rem;
+          width: 4.5rem;
+        }
+      }
  
       .message {
-        margin: 1rem;
-        padding: 1rem;
-        width: 60%;
-        font-size: clamp(0.5rem, 0.5vw, 1rem);
+        display: flex;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        width: 55%;
+        font-size: clamp(0.5rem, 0.4vw, 1rem);
         border-radius: 2rem;
+        line-height: 1.5;
+        font-weight: 700;
       }
 
       .left {
         background-color: hsl(270, 78%, 91%);
         color: hsl(276, 55%, 52%);
       }
-
+      //fix messge to the right
       .right {
         background-color: white;
         color: hsl(271, 15%, 43%);
         align-self: flex-end;
       }
+
+      .option {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0.5rem;
+        padding: 1rem;
+        background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        border-radius: 2rem;
+        border-bottom-left-radius: 1rem;
+        align-items: center;
+        width: 70%;
+        margin: 0.5rem;
+
+        .left-side {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          .circle {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            border: solid 1px white;
+          }
+
+          .text {
+            font-size: clamp(0.5rem, 0.5vw, 1.5rem);
+            color: white
+          }
+        }
+
+        .right-side {
+          font-size: clamp(0.5rem, 1vw, 1.5rem);
+          margin-right: 2rem;
+          color: white;
+          font-weight: 700;
+        }
+      }
     }
 
     .input {
+      align-items: flex-end;
+      justify-content: flex-end;
       height: 9rem;
       border-bottom-left-radius: 3rem;
       border-bottom-right-radius: 3rem;
