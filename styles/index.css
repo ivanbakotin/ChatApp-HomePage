@@ -207,7 +207,7 @@ body {
   margin: 0.5rem;
   padding: 0.8rem;
   width: 55%;
-  font-size: clamp(0.5rem, 0.4vw, 1rem);
+  font-size: clamp(0.6rem, 0.4vw, 1rem);
   border-radius: 2rem;
   line-height: 1.5;
   font-weight: 700;
@@ -256,35 +256,90 @@ body {
 }
 
 .container .phone .messages .option .left-side .circle {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
   border-radius: 50%;
   border: solid 1px white;
 }
 
 .container .phone .messages .option .left-side .text {
-  font-size: clamp(0.5rem, 0.5vw, 1.5rem);
+  font-size: clamp(0.6rem, 0.6vw, 1.5rem);
   color: white;
 }
 
 .container .phone .messages .option .right-side {
-  font-size: clamp(0.5rem, 1vw, 1.5rem);
-  margin-right: 2rem;
+  font-size: clamp(0.6rem, 1vw, 1.5rem);
+  margin-right: 1rem;
   color: white;
   font-weight: 700;
 }
 
 .container .phone .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 9rem;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
   background-color: #f5f3f7;
+}
+
+.container .phone .input .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  width: 25rem;
+  height: 5rem;
+}
+
+.container .phone .input .form .input-field {
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  width: 25rem;
+  height: 5rem;
+  font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+  padding-left: 2rem;
+}
+
+.container .phone .input .form .input-field::-webkit-input-placeholder {
+  font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+}
+
+.container .phone .input .form .input-field:-ms-input-placeholder {
+  font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+}
+
+.container .phone .input .form .input-field::-ms-input-placeholder {
+  font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+}
+
+.container .phone .input .form .input-field::placeholder {
+  font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+}
+
+.container .phone .input .form .send-message::after {
+  font-size: clamp(2rem, 1vw, 5rem);
+  content: "\02C3";
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 1rem;
 }
 
 .container .description {
@@ -296,14 +351,17 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3rem;
-  width: 30%;
+  width: 35%;
+  margin-bottom: 4rem;
 }
 
 .container .description h1 {
-  font-size: clamp(2rem, 2vw, 4rem);
+  color: #3e2753;
+  font-size: clamp(3rem, 2vw, 4rem);
 }
 
 .container .description p {
-  font-size: clamp(1rem, 1vw, 3rem);
+  color: #a39daa;
+  font-size: clamp(2rem, 1vw, 3rem);
 }
 /*# sourceMappingURL=index.css.map */

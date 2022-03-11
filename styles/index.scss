@@ -149,7 +149,7 @@ body {
         margin: 0.5rem;
         padding: 0.8rem;
         width: 55%;
-        font-size: clamp(0.5rem, 0.4vw, 1rem);
+        font-size: clamp(0.6rem, 0.4vw, 1rem);
         border-radius: 2rem;
         line-height: 1.5;
         font-weight: 700;
@@ -184,21 +184,21 @@ body {
           gap: 0.5rem;
 
           .circle {
-            height: 2.5rem;
-            width: 2.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
             border-radius: 50%;
             border: solid 1px white;
           }
 
           .text {
-            font-size: clamp(0.5rem, 0.5vw, 1.5rem);
+            font-size: clamp(0.6rem, 0.6vw, 1.5rem);
             color: white
           }
         }
 
         .right-side {
-          font-size: clamp(0.5rem, 1vw, 1.5rem);
-          margin-right: 2rem;
+          font-size: clamp(0.6rem, 1vw, 1.5rem);
+          margin-right: 1rem;
           color: white;
           font-weight: 700;
         }
@@ -206,12 +206,48 @@ body {
     }
 
     .input {
+      display: flex;
       align-items: flex-end;
-      justify-content: flex-end;
+      justify-content: center;  
       height: 9rem;
       border-bottom-left-radius: 3rem;
       border-bottom-right-radius: 3rem;
       background-color: hsl(270, 20%, 96%);
+
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
+        border-radius: 2rem;
+        background-color: white;
+        width: 25rem;
+        height: 5rem;
+        
+        .input-field {
+          border-radius: 2rem;
+          outline: none;
+          border: none;
+          width: 25rem;
+          height: 5rem;
+          font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+          padding-left: 2rem;
+          
+          &::placeholder {
+            font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+       
+          }
+        }
+
+        .send-message::after {
+          font-size: clamp(2rem, 1vw, 5rem);
+          content: "\02C3";
+          color: white;
+          background-color: black;
+          border-radius: 50%;
+          padding: 1rem;
+        }
+      }
     }
   }
 
@@ -219,14 +255,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 30%;
+    width: 35%;
+    margin-bottom: 4rem;
 
     h1 {
-      font-size: clamp(2rem, 2vw, 4rem);
+      color: hsl(271, 36%, 24%);
+      font-size: clamp(3rem, 2vw, 4rem);
     }
 
     p {
-      font-size: clamp(1rem, 1vw, 3rem);
+      color: hsl(270, 7%, 64%);
+      font-size: clamp(2rem, 1vw, 3rem);
     }
   }
 }
